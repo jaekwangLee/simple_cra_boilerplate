@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+simple_cra_boilerplate
+1. 소개
+(1) 본 프로젝트는 CRA(creat-react-app)를 업데이트하였으며,  react 초보자를 위한 프로젝트입니다.
+(2) 누구나 쉽게 개발하기 적합한 환경을 구축하고, 빠르게 프로젝트를 만들어가기 기본적인 컴포넌트들을 제공합니다.
+(3) 누구든 가져다 쓰고 자유롭게 수정해서 사용해도 무방합니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. 방향성 및 커스텀 내용
+(0) class 컴포넌트 사용
+> React는 프레임워크라기보다는 라이브러리라고 생각하는 개인적인 생각에 의하자면, hooks의 use function들은 react를 마치 프레임워크처럼 만들어 버리는것 같습니다.
+왜냐하면, 기존 pure javascript 사용자가 코드를 봤을때 쉽게 추가/수정 할수있다면 이거는 javascript 라이브러리가 맞지만, 아니라면 프레임워크에 가깝다고 보기 때문입니다.
+따라서, 개인적인 이 생각에 기반해 본 프로젝트는 class 컴포넌트 사용을 지향합니다.
+(1) craco. 
+> CRA를 eject하지않고, craco를 이용해 절대경로를 사용가능하게 합니다.
+(2) react-hot-loader. 
+> react-hot-loader를 적용, 새로고침하지않고도 화면을 새로 렌더링해줘 개발 편의성이 증가하였습니다.
+(3) styled-component, scss
+> 기본적으로 styled-component의 사용을 지향합니다. styled-component가 사용성이 유연하고, 유지관리의 편의성이 좋다고 판단하였습니다.
